@@ -1,4 +1,3 @@
 name = "Amon "
 
-
 print(name)
