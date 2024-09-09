@@ -1,2 +1,4 @@
 name = "Amon"
-print (name)
+
+
+print ("Hello " + name + "!")
