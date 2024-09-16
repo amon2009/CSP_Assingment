@@ -13,19 +13,19 @@ int main(void) {
     scanf("%f", &grocieries);
     printf (" How much does your transportation cost: \n"); 
     scanf("%f", &car);
-     savings = income
-     expenses = rent + utilities + grocieries + car;
-     spend = income - expenses - savings; 
-     printf("you make %.2f\n",income);
-     printf("Your expenses are %.2f \n", expenses);
-     printf ("Your savings are %.2f \n", savings);
-     printf("Your spending money is %.2f \n", spend);
-     prent = utilities/income * 100; 
-     pgroceries = grocieries/ income * 100; 
-     psaving = savings/ income * 100; 
-     pexpenses = expenses/ income * 100; 
-     printf("Your rent is %d%% of your income. \n", (int) prent);
-     printf("Your utilities is %d%% of your income. \n", (int) putilities);
+    savings = income;
+    expenses = rent + utilities + grocieries + car;
+    spend = income - expenses - savings; 
+    printf("you make %.2f\n",income);
+    printf("Your expenses are %.2f \n", expenses);
+    printf ("Your savings are %.2f \n", savings);
+    printf("Your spending money is %.2f \n", spend);
+    prent = utilities/income * 100; 
+    pgroceries = grocieries/ income * 100; 
+    psaving = savings/ income * 100; 
+    pexpenses = expenses/ income * 100; 
+    printf("Your rent is %d%% of your income. \n", (int) prent);
+    printf("Your utilities is %d%% of your income. \n", (int) putilities);
 
     return 0; 
 
