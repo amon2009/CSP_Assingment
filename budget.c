@@ -24,6 +24,7 @@ int main(void) {
     pgroceries = grocieries/ income * 100; 
     psaving = savings/ income * 100; 
     pexpenses = expenses/ income * 100; 
+    putilities= utilities/ income * 100;
     printf("Your rent is %d%% of your income. \n", (int) prent);
     printf("Your utilities is %d%% of your income. \n", (int) putilities);
 
