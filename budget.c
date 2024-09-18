@@ -15,7 +15,7 @@ int main(void) {
     scanf("%f", &car);
     savings = income;
     expenses = rent + utilities + grocieries + car;
-    spend = income - expenses - savings; 
+    spend = income - savings - expenses ; 
     printf("you make %.2f\n",income);
     printf("Your expenses are %.2f \n", expenses);
     printf ("Your savings are %.2f \n", savings);

@@ -5,4 +5,9 @@ utilities = int(input(" How much does your utilities cost:"))
 grocieries = int(input("How much do your grocieries cost:"))
 car = int(input("How much does your transportation cost: "))
 expenses = rent + utilities + grocieries + car
-print(expenses)
+savings = income
+spend = income - savings - expenses
+print("Your monthly income is", income)
+print("Your expenses are", expenses)
+print("Your monthly savings is", savings)
+print("Your spending money is", spend)
