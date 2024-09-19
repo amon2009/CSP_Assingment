@@ -1,14 +1,17 @@
 #include <stdio.h>
 
-int main(void) { 
-    char animal, place, verb;
-    printf("Name an animal: \n");
-    fgets(animal, size(animal), stdin); 
-    printf("Name a Place");
-    fgets(place, size(place), stdin);
-    printf("Name a verb");
-    fgets(verb, size(verb), stdin);
-    printf("The %s walked to the %s and did %s with his friend angry turtle.\n", animal, place, verb); 
 
+int main(void) { 
+    char animal[20];
+    char place[20];
+    char verb[20];
+    printf("Name an animal: ");
+    scanf("%s", animal);
+    printf("Name a Place: ");
+    scanf("%s", place);
+    printf("Name a tense verb: ");
+    scanf("%s", verb);
+    printf (" The %s walked to the %s and  %s with his friend angry turtle.\n", animal, place, verb);
+    
     return 0; 
 }
