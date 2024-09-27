@@ -1,14 +1,17 @@
-def inputs
-
-
 print("This is a budget calculator")
-income = int(input("How much do you make a mouth?"))
-rent = int(input("How much do your rent cost:"))
-utilities = int(input(" How much does your utilities cost:"))
-grocieries = int(input("How much do your grocieries cost:"))
-car = int(input("How much does your transportation cost: "))
+
+def inputs(variable):
+  
+   var = float(input(f"Wht is your {variable} by month?"))
+   return var
+
+ 
+inputs(income)
+   
+
+
 expenses = rent + utilities + grocieries + car
-savings = income
+savings = income  *.2
 spend = income - expenses
 print("Your monthly income is", income)
 print("Your expenses are", expenses)
@@ -20,9 +23,17 @@ psaving = (savings/ income) * 100
 pexpenses = (expenses/ income) * 100
 putilities= (utilities/ income) * 100
 pcar = (car/income) * 100
-print("Your rent is", prent,"% of your income." )
-print("Your utilitites is ", putilities,"% of your income")
-print("Your groceries is", pgroceries,"% of your income" )
-print("Your transport is", pcar,"% of your income")
-print("Your expenses is", pexpenses,"% of your income")
-print("Your savings is,", psaving," % of your income")
+
+def percent(type, amount):
+    per = amount/income *100
+    print(f"Your {type} is {per}% of your income.")
+
+percent("rent", rent)
+percent("utilities", utilities)
+percent("grocieries", grocieries)
+percent("transportation", car)
+percent("expenses", expenses)
+percent("savings", savings)
+
+
+

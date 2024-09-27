@@ -1,34 +1,43 @@
 #include <stdio.h>
-
 float income, rent, utilities, grocieries, car, savings, expenses, spend;
 
-void percent(char type[], int amount[]){
-   int per = amount/income *100;
+void percent(char type[], float amount){
+  float per = amount/income *100;
 
-   printf("Your %s is %d%% of your income. \n", type, per);
+  printf("Your %s is %f of your income. \n", type, per);
+}
+
+float inputs(char type[],float var){
+  printf("monthly %s:\n", type);
+  scanf("%f", &var);
+  return var;
+
 }
 
 int main(void){ 
     
-printf("This is a budget calculator.\n How much do you make a mouth?\n"); 
-scanf("%f", &income);
-printf (" How much do your rent cost: \n"); 
-scanf("%f", &rent);
-printf (" How much does your utilities cost: \n"); 
-scanf("%f", &utilities);
-printf (" How much do your grocieries cost: \n"); 
-scanf("%f", &grocieries);
-printf (" How much does your transportation cost: \n"); 
-scanf("%f", &car);
-savings = income *.2;
-expenses = rent + utilities + grocieries + car;
-spend = income - savings - expenses ; 
-printf("you make %.2f\n",income);
-printf("Your expenses are %.2f \n", expenses);
-printf ("Your savings are %.2f \n", savings);
-printf("Your spending money is %.2f \n", spend);
+ printf("This is a budget calculator.\n");
+ income = inputs("income", income);
+ rent = inputs("rent", rent);
+ utilities = inputs("utilities", utilities);
+ grocieries = inputs("grocieries", grocieries);
+ car = inputs("transportation", car);
+
+ savings = income *.2;
+ expenses = rent + utilities + grocieries + car;
+ spend = income - savings - expenses ; 
+ printf("you make %.2f\n",income);
+ printf("Your expenses are %.2f \n", expenses);
+ printf ("Your savings are %.2f \n", savings);
+ printf("Your spending money is %.2f \n", spend);
    
-percent("rent", rent);
+ percent("rent ", rent);
+ percent("utilities",utilities);
+ percent("grocieries", grocieries);
+ percent("transportation", car);
+ percent("savings", savings);
+ percent("expences", expenses);
+ percent("spend money", spend);
     
 return 0; 
 
