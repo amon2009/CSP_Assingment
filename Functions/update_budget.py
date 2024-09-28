@@ -1,12 +1,21 @@
 print("This is a budget calculator")
+income = float
+rent = float
+utilities = float
+grocieries = float
+car = float 
 
-def inputs(variable):
+def inputs(ty, variable):
   
-   var = float(input(f"Wht is your {variable} by month?"))
+   var = (input(f"What is your {ty} by month?") &variable)
    return var
 
  
-inputs(income)
+income = inputs("income", income)
+rent = inputs("rent", rent)
+utilities = inputs("utilities", utilities)
+grocieries = inputs("grocieries", grocieries)
+car = inputs("transportation", car)
    
 
 
