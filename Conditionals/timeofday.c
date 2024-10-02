@@ -1,10 +1,11 @@
 #include <stdio.h>
-int time = 15;
-int main(void) { 
-    if ( time == 7 || 8 || 9 || 10 || 11){
-        printf("Good Morning \n");
-    } else if (time == 12 || 13 || 14 || 15 || 16 || 17){
-        printf("Good Afternoon \n");
-    };
-    return 0;
+#include <time.h>
+int main() { 
+  time_t rawtime;
+  struct tm *timeinfo;
+
+  time(&rawtime);
+  timeinfo = localtime(&rawtime);
+  printf("Current local time and date: %s", asctime(timeinfo));
+  return 0;
 }
