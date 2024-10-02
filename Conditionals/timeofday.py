@@ -1,7 +1,7 @@
-time = "afternoon"
+time = "morning"
 if time == "morning":
    print("Good Morning!")
-if time == "afternoon":
+elif time == "afternoon":
    print("Good Afternoon!")
-if time == "evening":
+elif time == "evening":
    print("Good Evening")
