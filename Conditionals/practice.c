@@ -17,4 +17,4 @@ int main(void) {
         printf("Your grade is a F \n");
     }
     return 0; 
-}
+};

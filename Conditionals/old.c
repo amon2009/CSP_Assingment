@@ -1,5 +1,5 @@
 #include <stdio.h>
-int age = 3;
+int age = 16;
 int main(void) { 
     if (age >= 18){
         printf("You are old enough to vote \n");
